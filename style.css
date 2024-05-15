@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* padding: 0;
+    margin: 0;
+    width: 80vw !important; */
+    background-color: #27374D;
+}
+
+nav {
+    background-color: #9DB2BF;
+    position: sticky;
+}
+
+#navebarcontainer {
+    margin-left: 100px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    position: absolute;
+    padding: 16px;
+    margin-left: 83%;
+}
+
+.dropdown-menu>li:hover {
+    cursor: pointer;
+    color: #164863;
+    transform: scale(1.1);
+    transition: transform 3ms ease;
+}
+
+
+#btn1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px gray;
+    border-radius: 10px;
+    padding: 6px;
+
+}
+
+#child {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 90px;
+
+}
+
+#child1>span {
+    font-size: 40px;
+}
+
+#number {
+
+    font-size: 80px;
+    color: yellow;
+
+}
+
+#container4Img>img {
+
+    border-top: 2px solid rgb(185, 185, 79);
+    padding-top: 10px;
+
+}
+
+#childcontainer5 span {
+    height: 70px;
+    width: 90px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: rgba(157, 83, 226, 0.918);
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+
+}
+
+#childcontainer5 h3 {
+    margin-top: 30px;
+
+}
+
+.card {
+    width: 16rem;
+    padding-top: 10px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.card:hover {
+    box-shadow: 0 4px 5px rgba(241, 235, 235, 0.95);
+    transform: scale(1.1);
+    transition: transform 300ms ease;
+}
+
+.card-title {
+    margin-top: 20px;
+}
+
+.card-text {
+    margin: 15px;
+    padding-bottom: 20px;
+}
+
+#footerIcon:hover {
+    cursor: pointer;
+    color: white;
+    transform: scale(1.4);
+    transition: transform 1ms ease;
+}
+
+@media screen and (max-width: 480px) {
+    .page4 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        margin-left: 30%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .modal {
+        margin-top: 30%;
+    }
+}

@@ -1,0 +1,58 @@
+body {
+    background-color: #27374D;
+}
+
+nav {
+    background-color: #9DB2BF;
+    position: sticky;
+}
+
+#navebarcontainer {
+    margin-left: 100px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    position: absolute;
+    padding: 16px;
+    margin-left: 83%;
+}
+
+.dropdown-menu>li:hover {
+    cursor: pointer;
+    color: #164863;
+    transform: scale(1.1);
+    transition: transform 3ms ease;
+}
+
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.9)), url("../public/images/about-as-service-contact-information-concept.jpg");
+    background-size: 100% 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.card {
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px #fffefe;
+}
+
+@media only screen and (max-width:480px) {
+    .dropdown-menu {
+        position: absolute;
+        padding: 10px;
+        margin-left: 30%;
+        font-size: 16px;
+    }
+
+    .modal {
+        margin-top: 30%;
+    }
+}

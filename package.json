@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "botstrap": "^0.20.1",
+    "icons": "^1.0.0",
+    "node": "^18.20.2"
+  }
+}

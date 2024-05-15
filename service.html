@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechGenius Institute</title>
+    <link rel="shortcut icon" href="./public/images/banner1.jpeg" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./service.css"/>
+  </head>
+  <body class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="./public/images/banner-removebg-preview.png"
+            style="height: 45px; width: 100px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navebarcontainer"
+          aria-controls="navebarcontainer"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navebarcontainer">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-4">
+              <a class="nav-link" href="./index.html">
+                <span class="bi bi-house"> Home </span></a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="./course.html"
+                ><span class="bi bi-journal-code"> Cources</span></a
+              >
+            </li>
+
+            <li class="nav-item me-2">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./service.html"
+                ><span class="bi bi-wrench-adjustable-circle"> Service</span></a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="./about.html"
+                ><span class="bi bi-person-vcard"> About</span></a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="./contact.html"
+                ><span class="bi bi-phone-flip"> Contact us </span></a
+              >
+            </li>
+          </ul>
+          <div class="nav-item me-3">
+            <nav
+              class="dropdown-toggle"
+              type="text"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="bi bi-box-arrow-in-right" style="cursor: pointer">
+                Sign in</span
+              >
+            </nav>
+            <ul class="dropdown-menu">
+              <li class="nav-link mt-1">
+                <span
+                  class="bi bi-box-arrow-in-right"
+                  data-bs-target="#Singin"
+                  data-bs-toggle="modal"
+                >
+                  Sing in</span
+                >
+              </li>
+              <li class="nav-link mt-1">
+                <span
+                  class="bi bi-person-add"
+                  data-bs-target="#Singup"
+                  data-bs-toggle="modal"
+                >
+                  Sing up</span
+                >
+              </li>
+              <li class="nav-link mt-1">
+                <span
+                  class="bi bi-person-lock"
+                  data-bs-target="#ChangePassword"
+                  data-bs-toggle="modal"
+                >
+                  Change Password
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="modal fade" id="Singin">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sing In</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body mt-1 p-3 d-flex row">
+            <div class="col-6">
+              <img
+                src="./public/images/img3-removebg-preview.png"
+                class="h-100 w-100"
+              />
+            </div>
+            <div class="col-6">
+              <input
+                type="text"
+                placeholder="Enter Email"
+                class="form-control mb-3 p-2"
+              />
+              <input
+                type="password"
+                placeholder="Enter Password"
+                class="form-control p-2"
+              />
+              <a href="#" class="mt-5">Forgate Password</a>
+              <button class="btn btn-primary fw-bold mt-2 w-100">
+                Sing in
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Singup">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Registration</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex row">
+            <div class="col-5">
+              <img src="./public/images/login.jpg" class="w-100 h-100" />
+            </div>
+            <div class="col-7">
+              <input
+                type="text"
+                placeholder="Enter Name"
+                class="form-control mb-3 p-2"
+              />
+              <input
+                type="text"
+                placeholder="Enter Email"
+                class="form-control mb-3 p-2"
+              />
+              <input
+                type="password"
+                placeholder="Enter Password"
+                class="form-control mb-3 p-2"
+              />
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                class="form-control p-2 mb-5"
+              />
+              <input type="checkbox" class="form-check-input" /><span
+                class="text-light-emphasis"
+                >I accept TechGenius Institute
+                <a href="#" style="text-decoration: none" class="text-primary"
+                  >Terms of Use</a
+                >
+                and Privacy Notice.</span
+              >
+              <button class="btn btn-primary fw-bold mt-3 w-100">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="ChangePassword">
+      <div class="modal-dialog">
+        <div class="modal-content pb-3">
+          <div class="modal-header">
+            <h5 class="modal-title">Change Password</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body mt-1 p-3 d-flex row">
+            <div class="col-6">
+              <img src="./public/images/Change pass.jpg" class="h-100 w-100" />
+            </div>
+            <div class="col-6">
+              <input
+                type="text"
+                placeholder="Enter Email"
+                class="form-control mb-3 p-2"
+              />
+              <input
+                type="password"
+                placeholder="Enter Old Password"
+                class="form-control p-2 mb-3"
+              />
+              <input
+                type="password"
+                placeholder="Enter New Password"
+                class="form-control p-2 mb-3"
+              />
+              <input
+                type="password"
+                placeholder="Confirm New Password"
+                class="form-control p-2 mb-3"
+              />
+              <button class="btn btn-primary fw-bold mt-2 w-100">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="p-4">
+      <div class="mt-1 pt-4 fw-bold">
+        <div
+          class="d-flex justify-content-center mt-5 pt-5"
+          style="color: white"
+        >
+          <span
+            style="font-size: 350%; text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.5)"
+            class="pt-5 pe-0 mt-5"
+            >Services</span
+          >
+          <span
+            class="bi bi-wrench-adjustable-circle pt-5 ps-0 mt-5 mb-5 ms-2"
+            style="font-size: 350%; text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.5)"
+          ></span>
+        </div>
+      </div>
+    </main>
+
+    <div class="text-white mt-3">
+      <div class="d-flex justify-content-between row">
+        <h3 class="text-bg-dark p-1 d-flex justify-content-center">Training</h3>
+        <div class="col-12 col-md-6 mt-1">
+          <h4 class="d-flex justify-content-center">Clasroom Training</h4>
+          <img
+            src="./public/images/classroom Training.jpg"
+            alt=""
+            class="h-25 w-100"
+          />
+          <div>
+            <h5>Empowering Learning in a Conducive Environment</h5>
+            <p>
+              Explore the enriching world of classroom training at NareshiT,
+              where we bring education to lifein a vibrant and interactive
+              setting. Our classroom training programs are meticulously designed
+              to foster a conducive learning environment, ensuring an immersive
+              and effective educational experience.
+            </p>
+            <h5>Why Opt for TechGenius Institute Classroom Training:</h5>
+            <h5>Engaging Learning Atmosphere:</h5>
+            <p>
+              Experience an engaging and dynamic learning atmosphere in our
+              well-equipped classrooms, promoting active participation and
+              effective knowledge absorption.
+            </p>
+            <h5>Expert Instructors:</h5>
+            <p>
+              Learn from seasoned industry professionals and expert instructors
+              who bring real-world insights and practical experience into the
+              classroom, ensuring a holistic learning journey.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mt-1">
+          <h4 class="d-flex justify-content-center">Online Training</h4>
+          <img
+            src="./public/images/onlineTraining.jpg"
+            alt=""
+            class="h-25 w-100"
+          />
+          <div>
+            <h5>Explore Online Learning: It's just one click away.</h5>
+            <p>
+              Create a straightforward <b>online training</b> plan that matches
+              the needs of the IT industry. This uncomplicated yet thorough
+              <b>online course</b> curriculum includes important tech skills,
+              making sure learners have what they need to succeed. Learn
+              <b>IT courses</b> at your own speed with easy access to course
+              materials. Practice what you learn in real-life situations through
+              hands-on projects, Labs, and coding exercises, strengthening your
+              understanding of the skills.
+            </p>
+            <h5>Personalized Learning:</h5>
+            <p>
+              Tailor your learning experience to align with your preferred
+              style, engaging with content at your own speed. Focus more on
+              challenging topics and progress swiftly through familiar ones.
+            </p>
+            <h5>Affordable and Accessible Education:</h5>
+            <p>
+              Access reasonably priced online courses and resources, bringing
+              quality education to a broader learner's perspective and making it
+              more reachable for everyone.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-between" id="CorporateTraining">
+        <h3 class="text-bg-dark p-1 d-flex justify-content-center">
+          Corporate Training
+        </h3>
+        <div class="col-12 col-md-5">
+          <img
+            src="./public/images/Corporate Training.jpg"
+            class="h-75 w-100"
+          />
+        </div>
+        <div class="col-12 col-md-7">
+          <dl>
+            <dt class="fs-4">
+              Elevate Your Team with TechGenius Institute Corporate Training
+              Programs
+            </dt>
+            <dd>
+              TechGenius Institute offers tailored corporate training programs
+              to enhance the skills and efficiency of your workforce. Our
+              specialized courses are designed to meet the demands of the
+              ever-evolving corporate landscape, ensuring your team stays ahead
+              in the competitive market.
+            </dd>
+            <dd>
+              TechGenius Institute offers tailored corporate training programs
+              to enhance the skills and efficiency of your workforce. Our
+              specialized courses are designed to meet the demands of the
+              ever-evolving corporate landscape, ensuring your team stays ahead
+              in the competitive market.
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <h3 class="d-flex justify-content-center text-bg-dark p-1">
+          Inernship
+        </h3>
+        <div class="col-12 col-md-5">
+          <img src="./public/images/inernship.jpg" alt="" class="h-100 w-100" />
+        </div>
+        <div class="col-12 col-md-7">
+          <h5>Virtual Internship 2024</h5>
+          <h6>Eligibility:</h6>
+          <ul>
+            <li>
+              Academic Pursuing Students Only (1st Year / 2nd Year / 3rd Year)
+            </li>
+            <li>Any Graduation / Post Graduation.</li>
+            <li>BE/BTech/ME/MTech/BCA/MCA/BBA/MBA/BSc/BCom etc.,</li>
+          </ul>
+          <h6>Technologies:</h6>
+          <ul>
+            <li>Python</li>
+            <li>EDA</li>
+            <li>DataScience - Machine Learning / Deep Learning</li>
+            <li>DataAnalytics</li>
+            <li>Business Analytics</li>
+            <li>Power BI</li>
+            <li>AWS</li>
+            <li>DevOps</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center mt-4">
+        <h3 class="d-flex justify-content-center text-bg-dark p-1">
+          Software Service
+        </h3>
+        <div class="col-12 col-md-5">
+          <img
+            src="./public/images/html-css-collage-concept-with-person.jpg"
+            alt=""
+            class="h-100 w-100"
+          />
+        </div>
+        <div class="col-12 col-md-7">
+          <p>
+            Our unique approach in developing software cuts the project risk by
+            bringing agile software methods using per-packaged framework powered
+            by open source model ensuring to deliver working software early
+            working around allocated budget.
+          </p>
+          <p>
+            In the present era every business wants to reach each and every
+            customer keeping updated about their products or services. Keeping
+            this in mind we provides attractive and hassle free services that
+            our client is looking for also helping them to increase their
+            business reach-ability as well as the customers towards their
+            product or services.
+          </p>
+          <h6>We work in various industries vertical like:</h6>
+          <ul>
+            <li>E-Commerce</li>
+            <li>Healthcare & Pharmaceuticals.</li>
+            <li>Financial & Banking</li>
+            <li>Small-mid sized ISV (Independent Software Vendors)</li>
+            <li>Information Technology</li>
+            <li>Business Services</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-between mt-4">
+        <h3 class="text-bg-dark p-1 d-flex justify-content-center">
+          Placement
+        </h3>
+        <div class="col-12 col-md-5">
+          <img src="./public/images/placement.jpg" class="h-100 w-100" />
+        </div>
+        <div class="col-12 col-md-7">
+          <h5>Navigating Placement-Oriented IT Courses</h5>
+          <p>
+            Embarking on a journey towards a successful IT career involves
+            strategic skill development. In this programme, we'll guide you
+            through the most relevant and placement-oriented courses in the IT
+            sector. These programmes are designed to enhance your employability
+            and provide the practical skills demanded by industry leaders.
+          </p>
+
+          <p>
+            Begin your journey by understanding the current requirements of the
+            IT industry. Explore the in-demand skills and technologies that
+            employers are seeking in prospective candidates.
+          </p>
+
+          <p>
+            By completing these Programme, you'll have a comprehensive
+            understanding of the courses that align with the demands of the IT
+            job market. These placement-oriented courses will not only enhance
+            your technical skills but also increase your employability in the
+            dynamic and evolving IT sector. Best of luck in your pursuit of a
+            rewarding IT career!|
+          </p>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center mt-4">
+        <h3 class="d-flex justify-content-center text-bg-dark p-1">
+          Key Features of Our Software Training Institute:
+        </h3>
+        <div class="col-12 col-md-5">
+          <img src="./public/images/keyfeture.jpg" alt="" class="h-100 w-100" />
+        </div>
+        <div class="col-12 col-md-7">
+          <p>
+            In addition to theoretical knowledge, our institute emphasizes
+            hands-on projects, allowing students to apply what they've learned
+            in a tangible, real-world context. Our state-of-the-art lab facility
+            provides the perfect environment for learners to experiment and hone
+            their skills. As part of our commitment to your success, we offer
+            dedicated mentor support, guiding you through the challenges of
+            real-world problems encountered in the IT industry.
+          </p>
+          <ul>
+            <li>
+              Real-time projects provide practical exposure to IT technologies.
+            </li>
+            <li>
+              Courses are structured around real-world scenarios prevalent in
+              the IT industry.
+            </li>
+            <li>
+              Comprehensive software courses address the latest industry
+              demands.
+            </li>
+            <li>
+              Hands-on projects enable the application of theoretical knowledge.
+            </li>
+            <li>
+              State-of-the-art lab facility for practical experimentation.
+            </li>
+            <li>
+              Mentor support to navigate and overcome real-world challenges in
+              the IT domain.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="container-fluid mt-5">
+      <footer
+        class="mt-4 pt-4 w-auto row"
+        style="background-color: rgb(0, 7, 35)"
+      >
+        <div
+          class="mb-2"
+          style="
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          "
+        >
+          <img
+            src="/public/images/footer.png"
+            class="shadow-lg mb-1"
+            style="height: 100px; width: 200px"
+          />
+        </div>
+        <div class="col-12 col-md-3">
+          <h6 class="border-bottom border-danger pb-2 text-warning">
+            ABOUT TechGenius Institute
+          </h6>
+          <p class="mt-4 text-warning-emphasis">
+            Training Institute Overview TechGenius Institute is a leading
+            software training institute providing Software Training, Project
+            Guidance, IT Consulting and Technology Workshops. Using our enhanced
+            global software training delivery methodology,
+          </p>
+        </div>
+
+        <div class="col-md-3 col-12">
+          <h6 class="border-bottom border-danger pb-2 text-warning">
+            INTERVIEW QUESTIONS
+          </h6>
+          <ul class="mt-4 text-warning-emphasis">
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >DevOps Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >AngularJS Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >Java Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >HTML Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >JavaScript Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >Advanced Java Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >HTML5 and CSS Interview Questions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-12">
+          <h6 class="border-bottom border-danger pb-2 text-warning">
+            RAIPUR MAIN CAMPUS
+          </h6>
+          <ul class="list-unstyled text-warning-emphasis mt-4">
+            <li>Add: 2nd Floor, Durga Bhavani Plaza, Raipur,Chhattisgarh</li>
+            <li>Ph :1234 5678 / 1098 7654</li>
+            <li>Email : support@TechGenius.com</li>
+          </ul>
+          <h6 class="border-bottom border-danger pb-2 mt-5 text-warning">
+            For Online Training:
+          </h6>
+          <ul class="list-unstyled mt-4 text-warning-emphasis">
+            <li>Call/Whatsapp: +91-6263171801</li>
+            <li>Email: techgeniustraining@gamil.com</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-12">
+          <d1v>
+            <h6 class="border-bottom pb-2 border-danger text-warning">
+              FOLLOW US ON SOCIAL MEDIA
+            </h6>
+            <div
+              class="d-flex justify-content-around text-center mt-4 text-warning-emphasis"
+            >
+              <span class="bi bi-facebook" id="footerIcon"></span>
+              <span class="bi bi-instagram" id="footerIcon"></span>
+              <span class="bi bi-linkedin" id="footerIcon"></span>
+              <span class="bi bi-twitter" id="footerIcon"></span>
+              <span class="bi bi-youtube" id="footerIcon"></span>
+            </div>
+          </d1v>
+          <d1v>
+            <h6 class="border-bottom border-danger pb-2 mt-5 text-warning">
+              JOIN OUR TELEGRAM-GET UPDATES
+            </h6>
+            <ul class="mt-4 text-warning-emphasis">
+              <li>
+                <a
+                  class="text-warning-emphasis"
+                  style="text-decoration: none; cursor: pointer"
+                  href="#"
+                  >TechGenius Institute Official Channel</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-warning-emphasis"
+                  style="text-decoration: none; cursor: pointer"
+                  href="#"
+                  >Python | JAVA | AWS | DevOps | Data Science</a
+                >
+              </li>
+            </ul>
+          </d1v>
+        </div>
+        <div class="mt-5 pb-2 text-warning-emphasis">
+          <marquee
+            behavior="scroll"
+            direction="left"
+            scrollamount="10"
+            loop="40"
+          >
+            <span class="text-decoration-none text-warning-emphasis fw-bold"
+              >Developed by:-&nbsp;&nbsp;Sukhsagar Jangde</span
+            >&nbsp;&nbsp;
+            <span class="bi bi-telephone">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="tel:(+91)6263171801 ms-3"
+                >&nbsp;+91 6263171801</a
+              > </span
+            >&nbsp;&nbsp;
+            <span class="bi bi-envelope-at">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="sagarjangde86@gmail.com"
+                >&nbsp;G-mail</a
+              > </span
+            >&nbsp;&nbsp;
+            <span class="bi bi-whatsapp">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="https://web.whatsapp.com/+91 6263171801"
+                >&nbsp;Whatsapp</a
+              > </span
+            >&nbsp;&nbsp;
+            <span class="bi bi-telegram">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="https://t.me/+916263171801"
+                >&nbsp;Telegram</a
+              > </span
+            >&nbsp;&nbsp;
+            <span class="bi bi-linkedin">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="https://www.linkedin.com/in/sukhsagar-jangde-4b0186178/"
+                >&nbsp;Linkedin</a
+              ></span
+            >
+            &nbsp;&nbsp;
+            <span
+              class="bi bi-github text-warning-emphasis"
+              style="margin-left: 6px"
+            >
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="https://github.com/SUKHSAGAR86"
+                >&nbsp;GitHub</a
+              >
+            </span>
+          </marquee>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

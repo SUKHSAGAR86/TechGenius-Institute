@@ -1,0 +1,82 @@
+body {
+    background-color: #27374D;
+}
+
+nav {
+    background-color: #9DB2BF;
+    position: sticky;
+}
+
+#navebarcontainer {
+    margin-left: 100px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    position: absolute;
+    padding: 16px;
+    margin-left: 83%;
+}
+
+.dropdown-menu>li:hover {
+    cursor: pointer;
+    color: #164863;
+    transform: scale(1.1);
+    transition: transform 3ms ease;
+}
+
+#bannerimg1 {
+    position: absolute;
+    z-index: 0;
+}
+
+#bannerimg2 {
+
+    position: relative;
+    z-index: 1;
+    margin-left: 600px;
+}
+
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../public/images/contact\ us\ banner.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+}
+
+@media only screen and (max-width: 480px) {
+    #ContactUsContainer {
+
+        width: 90vw !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    form>input {
+        width: 80vw !important;
+    }
+
+    #btnSubmit {
+        width: 80vw !important;
+    }
+
+    #ContactUs {
+        width: 80vw;
+        padding: 0;
+
+    }
+
+    .dropdown-menu {
+        padding: 10px;
+        position: absolute;
+        margin-left: 30%;
+        font-size: 16px;
+    }
+
+    .modal {
+        margin-top: 30%;
+    }
+}

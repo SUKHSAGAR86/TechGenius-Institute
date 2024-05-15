@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechGenius Institute</title>
+    <link
+      rel="shortcut icon"
+      href="./public/images/banner1.jpeg"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./course.css" />
+  </head>
+
+  <body class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"
+          ><img
+            src="/public/images/banner-removebg-preview.png"
+            style="height: 45px; width: 100px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navebarcontainer"
+          aria-controls="navebarcontainer"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navebarcontainer">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-4">
+              <a class="nav-link" href="/index.html">
+                <span class="bi bi-house"> Home </span></a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./course.html"
+                ><span class="bi bi-journal-code"> Cources</span></a
+              >
+            </li>
+
+            <li class="nav-item me-2">
+              <a class="nav-link" href="./service.html"
+                ><span class="bi bi-wrench-adjustable-circle"> Service</span></a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="./about.html"
+                ><span class="bi bi-person-vcard"> About</span></a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="./contact.html"
+                ><span class="bi bi-phone-flip"> Contact us </span></a
+              >
+            </li>
+          </ul>
+          <div class="nav-item me-3">
+            <nav
+              class="dropdown-toggle"
+              type="text"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="bi bi-box-arrow-in-right" style="cursor: pointer">
+                Sign in</span
+              >
+            </nav>
+            <ul class="dropdown-menu">
+              <li class="nav-link mt-1">
+                <span
+                  class="bi bi-box-arrow-in-right"
+                  data-bs-target="#Singin"
+                  data-bs-toggle="modal"
+                  >Sing in</span
+                >
+              </li>
+              <li class="nav-link mt-1">
+                <span
+                  class="bi bi-person-add"
+                  data-bs-target="#Singup"
+                  data-bs-toggle="modal"
+                  >Sing up</span
+                >
+              </li>
+              <li class="nav-link mt-1">
+                <span
+                  class="bi bi-person-lock"
+                  data-bs-target="#ChangePassword"
+                  data-bs-toggle="modal"
+                  >Change Password</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--nav bar close-->
+    <div class="modal fade" id="Singin">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sing In</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body mt-1 p-3 d-flex row">
+            <div class="col-6">
+              <img
+                src="./public/images/img3-removebg-preview.png"
+                class="h-100 w-100"
+              />
+            </div>
+            <div class="col-6">
+              <input
+                type="text"
+                placeholder="Enter Email"
+                class="form-control mb-3 p-2"
+              />
+              <input
+                type="password"
+                placeholder="Enter Password"
+                class="form-control p-2"
+              />
+              <a href="#" class="mt-5">Forgate Password</a>
+              <button class="btn btn-primary fw-bold mt-2 w-100">
+                Sing in
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Singup">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Registration</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex row">
+            <div class="col-5">
+              <img src="./public/images/login.jpg" class="w-100 h-100" />
+            </div>
+            <div class="col-7">
+              <input
+                type="text"
+                placeholder="Enter Name"
+                class="form-control mb-3 p-2"
+              />
+              <input
+                type="text"
+                placeholder="Enter Email"
+                class="form-control mb-3 p-2"
+              />
+              <input
+                type="password"
+                placeholder="Enter Password"
+                class="form-control mb-3 p-2"
+              />
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                class="form-control p-2 mb-5"
+              />
+              <input type="checkbox" class="form-check-input" /><span
+                class="text-light-emphasis"
+                >I accept TechGenius Institute
+                <a href="#" style="text-decoration: none" class="text-primary"
+                  >Terms of Use</a
+                >
+                and Privacy Notice.</span
+              >
+              <button class="btn btn-primary fw-bold mt-3 w-100">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="ChangePassword">
+      <div class="modal-dialog">
+        <div class="modal-content pb-3">
+          <div class="modal-header">
+            <h5 class="modal-title">Change Password</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body mt-1 p-3 d-flex row">
+            <div class="col-6">
+              <img src="./public/images/Change pass.jpg" class="h-100 w-100" />
+            </div>
+            <div class="col-6">
+              <input
+                type="text"
+                placeholder="Enter Email"
+                class="form-control mb-3 p-2"
+              />
+              <input
+                type="password"
+                placeholder="Enter Old Password"
+                class="form-control p-2 mb-3"
+              />
+              <input
+                type="password"
+                placeholder="Enter New Password"
+                class="form-control p-2 mb-3"
+              />
+              <input
+                type="password"
+                placeholder="Confirm New Password"
+                class="form-control p-2 mb-3"
+              />
+              <button class="btn btn-primary fw-bold mt-2 w-100">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!--carousel-->
+      <div class="carousel slide mt-3" data-bs-ride="carousel" id="banners">
+        <div class="carousel-inner">
+          <!--banner images-->
+          <div class="carousel-item active">
+            <img
+              src="/public/images/card  decps.jpg"
+              alt=""
+              class="w-100 d-block"
+              style="height: 410px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/public/images/card  SELENIUM.jpg"
+              alt=""
+              class="w-100 d-block"
+              style="height: 410px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/public/images/Card aws.jpg"
+              alt=""
+              class="w-100 d-block"
+              style="height: 410px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/public/images/saas-concept-collage.jpg"
+              alt=""
+              class="w-100 d-block"
+              style="height: 410px"
+            />
+          </div>
+        </div>
+        <!--banner images end-->
+        <!--prev and next button-->
+        <button
+          class="carousel-control-prev"
+          data-bs-slide="prev"
+          data-bs-target="#banners"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          data-bs-slide="next"
+          data-bs-target="#banners"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <!--prev and next button end-->
+        <div class="carousel-indicators">
+          <!--indicators button-->
+          <button
+            class="active"
+            data-bs-slide-to="0"
+            data-bs-target="#banners"
+          ></button>
+          <button data-bs-slide-to="1" data-bs-target="#banners"></button>
+          <button data-bs-slide-to="2" data-bs-target="#banners"></button>
+          <button data-bs-slide-to="3" data-bs-target="#banners"></button>
+        </div>
+      </div>
+    </main>
+    <div class="pt-2 mt-4" style="justify-content: center">
+      <div class="d-flex justify-content-around row">
+        <div class="card col-6 col-md-4 col-lg-3 mt-3">
+          <!--card 1-->
+          <img
+            src="/public/images/card .net.png"
+            alt=""
+            style="height: 150px"
+          />
+          <div class="card-body">
+            <h5>Full Stack .NET</h5>
+          </div>
+          <ul class="list-group list-group-flush pb-1">
+            <li class="list-unstyled">
+              <span class="bi bi-calendar2-event me-2"></span>Start Date: 25 Apr
+              2024
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-person me-2"></span>by : Mr. Prakash Senapathi
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-clock me-2"></span>Dur: 4 Months
+            </li>
+          </ul>
+          <div class="container-fluid mt-2 pb-2">
+            <a
+              href="#"
+              class="btn btn-primary me-1"
+              data-bs-target="#registration"
+              data-bs-toggle="modal"
+            >
+              Enroll Now</a
+            >
+            <a
+              href="#"
+              class="btn btn-warning ms-1"
+              data-bs-target="#Sharebtn"
+              data-bs-toggle="modal"
+              ><span class="bi bi-share"> Share</span></a
+            >
+          </div>
+        </div>
+
+        <div class="card col-6 col-md-4 col-lg-3 mt-3">
+          <!--card 2-->
+          <img
+            src="/public/images/card data.jpg"
+            alt=""
+            style="height: 150px"
+          />
+          <div class="card-body">
+            <h5>Full Stack Data Science & AI</h5>
+          </div>
+          <ul class="list-group list-group-flush pb-1">
+            <li class="list-unstyled">
+              <span class="bi bi-calendar2-event me-2"></span> Start Date: 25
+              Apr 2024
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-person me-2"></span>by : Mr. Prakash Senapathi
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-clock me-2"></span>Dur: 4 Months
+            </li>
+          </ul>
+          <div class="container-fluid mt-2 pb-2">
+            <a
+              href="#"
+              class="btn btn-primary me-1"
+              data-bs-target="#registration"
+              data-bs-toggle="modal"
+            >
+              Enroll Now</a
+            >
+            <a
+              href="#"
+              class="btn btn-warning me-1"
+              data-bs-target="#Sharebtn"
+              data-bs-toggle="modal"
+              ><span class="bi bi-share"></span> Share</a
+            >
+          </div>
+        </div>
+        <div class="card col-6 col-md-4 col-lg-3 mt-3">
+          <!--card 3-->
+          <img src="/public/images/card UI.jpg" alt="" style="height: 150px" />
+          <div class="card-body">
+            <h5>UI Full Stack</h5>
+          </div>
+          <ul class="list-group list-group-flush pb-1">
+            <li class="list-unstyled">
+              <span class="bi bi-calendar2-event me-2"></span> Start Date: 18
+              Apr 2024
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-person me-2"></span>by : Mr. Sudhakar Sharma
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-clock me-2"></span>Dur: 6 Months
+            </li>
+          </ul>
+          <div class="container-fluid mt-2 pb-2">
+            <a
+              href="#"
+              class="btn btn-primary me-1"
+              data-bs-target="#registration"
+              data-bs-toggle="modal"
+            >
+              Enroll Now</a
+            >
+            <a
+              href="#"
+              class="btn btn-warning me-1"
+              data-bs-target="#Sharebtn"
+              data-bs-toggle="modal"
+              ><span class="bi bi-share"></span> Share</a
+            >
+          </div>
+        </div>
+
+        <div class="card col-6 col-md-4 col-lg-3 mt-3">
+          <!--card 4-->
+          <img
+            src="/public/images/card java.jpg"
+            alt=""
+            style="height: 150px"
+          />
+          <div class="card-body">
+            <h5>Full Stack Java</h5>
+          </div>
+          <ul class="list-group list-group-flush pb-1">
+            <li class="list-unstyled">
+              <span class="bi bi-calendar2-event me-2"></span> Start Date: 15
+              Apr 2024
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-person me-2"></span>by : Mr. Kishan B
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-clock me-2"></span>Dur: 6 Months
+            </li>
+          </ul>
+          <div class="container-fluid mt-2 pb-2">
+            <a
+              href="#"
+              class="btn btn-primary me-1"
+              data-bs-target="#registration"
+              data-bs-toggle="modal"
+            >
+              Enroll Now</a
+            >
+            <a
+              href="#"
+              class="btn btn-warning me-1"
+              data-bs-target="#Sharebtn"
+              data-bs-toggle="modal"
+              ><span class="bi bi-share"></span> Share</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--card 5-->
+      <div class="pt-2 mt-2 d-flex justify-content-around row">
+        <div class="card col-6 col-md-4 col-lg-3 mt-3">
+          <img src="./public/images/Django.jpg" alt="" style="height: 150px" />
+          <div class="card-body">
+            <h5>DJANGO with Rest API</h5>
+          </div>
+          <ul class="list-group list-group-flush pb-1">
+            <li class="list-unstyled">
+              <span class="bi bi-calendar2-event me-2"></span>Start Date: 15 May
+              2024
+            </li>
+            <li class="lidt-unstyled">
+              <span class="bi bi-person me-2"></span> by : Mr. Satish Gupta
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-clock me-2"></span>Dru: 3 Months
+            </li>
+          </ul>
+          <div class="mt-2 d-flex justify-content-around mb-2">
+            <button
+              class="btn btn-primary"
+              data-bs-target="#registration"
+              data-bs-toggle="modal"
+            >
+              Enroll Now
+            </button>
+            <button
+              class="btn btn-warning"
+              data-bs-target="#Sharebtn"
+              data-bs-toggle="modal"
+            >
+              <span class="bi bi-share me-1"></span>Share
+            </button>
+          </div>
+        </div>
+        <!--card 6-->
+        <div class="card col-6 col-md-4 col-lg-3 mt-3">
+          <img
+            src="./public/images/spring boot.jpg"
+            alt=""
+            style="height: 150px"
+          />
+          <div class="card-body">
+            <h5>Spring Boot & Microservice</h5>
+          </div>
+          <ul class="list-group list-group-flush pb-1">
+            <li class="list-unstyled">
+              <span class="bi bi-calendar2-event me-2"></span>Start Date : 1 May
+              2024
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-person me-2"> by : Mr. Murti</span>
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-clock me-2"></span>Dur : 4 Months
+            </li>
+          </ul>
+          <div class="mt-2 d-flex justify-content-around mb-2">
+            <button
+              class="btn btn-primary"
+              data-bs-target="#registration"
+              data-bs-toggle="modal"
+            >
+              Enroll Now
+            </button>
+            <button
+              class="btn btn-warning"
+              data-bs-target="#Sharebtn"
+              data-bs-toggle="modal"
+            >
+              <span class="bi bi-share me-1"></span>Share
+            </button>
+          </div>
+        </div>
+        <!--card 7-->
+        <div class="card col-6 col-md-4 col-lg-3 mt-3">
+          <img
+            src="./public/images/ms-Azure.jpg"
+            alt=""
+            style="height: 150px"
+          />
+          <div class="card-body">
+            <h5>Ms-Azur + DevOps</h5>
+          </div>
+          <ul class="list-group list-group-flush pb-1">
+            <li class="list-unstyled">
+              <span class="bi bi-calendar2-event me-2"></span>Start Date : 1 May
+              2024
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-person me-2"> by : Mr. Wasif</span>
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-clock me-2"></span>Dur : 4 Months
+            </li>
+          </ul>
+          <div class="mt-2 d-flex justify-content-around mb-2">
+            <button
+              class="btn btn-primary"
+              data-bs-target="#registration"
+              data-bs-toggle="modal"
+            >
+              Enroll Now
+            </button>
+            <button
+              class="btn btn-warning"
+              data-bs-target="#Sharebtn"
+              data-bs-toggle="modal"
+            >
+              <span class="bi bi-share me-1"></span>Share
+            </button>
+          </div>
+        </div>
+        <!--card 8-->
+        <div class="card col-6 col-md-4 col-lg-3 mt-3">
+          <img
+            src="./public/images/Clanguge.jpg"
+            alt=""
+            style="height: 150px"
+          />
+          <div class="card-body">
+            <h5>C Language</h5>
+          </div>
+          <ul class="list-group list-group-flush pb-1">
+            <li class="list-unstyled">
+              <span class="bi bi-calendar2-event me-2"></span>Start Date : 2 May
+              2024
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-person me-2"> by : Mr. Sriniwas</span>
+            </li>
+            <li class="list-unstyled">
+              <span class="bi bi-clock me-2"></span>Dur : 4 Months
+            </li>
+          </ul>
+          <div class="mt-2 d-flex justify-content-around mb-2">
+            <button
+              class="btn btn-primary"
+              data-bs-target="#registration"
+              data-bs-toggle="modal"
+            >
+              Enroll Now
+            </button>
+            <button
+              class="btn btn-warning"
+              data-bs-target="#Sharebtn"
+              data-bs-toggle="modal"
+            >
+              <span class="bi bi-share me-1"></span>Share
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Enroll click registration popup modal -->
+      <div class="modal fade" id="registration">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Registration</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-lable="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-5">
+                  <img
+                    src="./public/images/img3-removebg-preview.png"
+                    class="h-75 w-75"
+                  />
+                </div>
+                <form class="col-7">
+                  <dl class="d-block justify-content-center">
+                    <dd>
+                      <input
+                        type="text"
+                        class="form-control mb-2 p-2"
+                        placeholder="Enter Your Name"
+                      />
+                    </dd>
+                    <dd>
+                      <input
+                        type="text"
+                        class="form-control mb-2 p-2"
+                        placeholder="Email Id"
+                      />
+                    </dd>
+                    <dd>
+                      <input
+                        type="text"
+                        class="form-control p-2"
+                        placeholder="Contact Number"
+                      />
+                    </dd>
+                  </dl>
+                  <div class="d-flex justify-content-between">
+                    <button
+                      class="btn btn-outline-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Skip
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      data-bs-target="#submit"
+                      data-bs-toggle="modal"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Share click popup modal -->
+      <div class="modal fade" id="Sharebtn">
+        <div class="modal-dialog p-4">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Share this course</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body mt-4">
+              <p>Share this course's details with your family & friends</p>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sharelink"
+                  placeholder="www.link_of_the_cources"
+                />
+                <button
+                  class="btn btn-outline-primary"
+                  type="button"
+                  id="sharelinkCopy"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+
+            <div class="ms-5 mb-5 mt-2" style="font-size: 25px">
+              <span
+                class="bi bi-envelope me-2 text-danger"
+                style="cursor: pointer"
+              ></span>
+              <span
+                class="bi bi-whatsapp me-2 text-success"
+                style="cursor: pointer"
+              ></span>
+              <span
+                class="bi bi-facebook me-2 text-primary"
+                style="cursor: pointer"
+              ></span>
+              <span
+                class="bi bi-instagram me-2"
+                style="cursor: pointer; color: RGB(193, 53, 132)"
+              ></span>
+              <span
+                class="bi bi-linkedin text-primary"
+                style="cursor: pointer"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="container-fluid">
+      <footer
+        class="mt-4 pt-4 w-auto row"
+        style="background-color: rgb(0, 7, 35)"
+      >
+        <div
+          class="mb-2"
+          style="
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          "
+        >
+          <img
+            src="/public/images/footer.png"
+            class="shadow-lg mb-1"
+            style="height: 100px; width: 200px"
+          />
+        </div>
+        <div class="col-12 col-md-3">
+          <h6 class="border-bottom border-danger pb-2 text-warning">
+            ABOUT TechGenius Institute
+          </h6>
+          <p class="mt-4 text-warning-emphasis">
+            Training Institute Overview TechGenius Institute is a leading
+            software training institute providing Software Training, Project
+            Guidance, IT Consulting and Technology Workshops. Using our enhanced
+            global software training delivery methodology,
+          </p>
+        </div>
+
+        <div class="col-md-3 col-12">
+          <h6 class="border-bottom border-danger pb-2 text-warning">
+            INTERVIEW QUESTIONS
+          </h6>
+          <ul class="mt-4 text-warning-emphasis">
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >DevOps Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >AngularJS Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >Java Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >HTML Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >JavaScript Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >Advanced Java Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >HTML5 and CSS Interview Questions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-12">
+          <h6 class="border-bottom border-danger pb-2 text-warning">
+           RAIPUR MAIN CAMPUS
+          </h6>
+          <ul class="list-unstyled text-warning-emphasis mt-4">
+            <li>Add: 2nd Floor, Durga Bhavani Plaza, Raipur,Chhattisgarh</li>
+            <li>Ph :1234 5678 / 1098 7654</li>
+            <li>Email : support@TechGenius.com</li>
+          </ul>
+          <h6 class="border-bottom border-danger pb-2 mt-5 text-warning">
+            For Online Training:
+          </h6>
+          <ul class="list-unstyled mt-4 text-warning-emphasis">
+            <li>Call/Whatsapp: +91-6263171801</li>
+            <li>Email: techgeniustraining@gamil.com</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-12">
+          <d1v>
+            <h6 class="border-bottom pb-2 border-danger text-warning">
+              FOLLOW US ON SOCIAL MEDIA
+            </h6>
+            <div
+              class="d-flex justify-content-around text-center mt-4 text-warning-emphasis"
+            >
+              <span class="bi bi-facebook" id="footerIcon"></span>
+              <span class="bi bi-instagram" id="footerIcon"></span>
+              <span class="bi bi-linkedin" id="footerIcon"></span>
+              <span class="bi bi-twitter" id="footerIcon"></span>
+              <span class="bi bi-youtube" id="footerIcon"></span>
+            </div>
+          </d1v>
+          <d1v>
+            <h6 class="border-bottom border-danger pb-2 mt-5 text-warning">
+              JOIN OUR TELEGRAM-GET UPDATES
+            </h6>
+            <ul class="mt-4 text-warning-emphasis">
+              <li>
+                <a
+                  class="text-warning-emphasis"
+                  style="text-decoration: none; cursor: pointer"
+                  href="#"
+                  >TechGenius Institute Official Channel</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-warning-emphasis"
+                  style="text-decoration: none; cursor: pointer"
+                  href="#"
+                  >Python | JAVA | AWS | DevOps | Data Science</a
+                >
+              </li>
+            </ul>
+          </d1v>
+        </div>
+        <div class="mt-5 pb-2 text-warning-emphasis">
+          <marquee
+            behavior="scroll"
+            direction="left"
+            scrollamount="10"
+            loop="40"
+          >
+            <span class="text-decoration-none text-warning-emphasis fw-bold"
+              >Developed by:-&nbsp;&nbsp;Sukhsagar Jangde</span
+            >&nbsp;&nbsp;
+            <span class="bi bi-telephone">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="tel:(+91)6263171801 ms-3"
+                >&nbsp;+91 6263171801</a
+              > </span
+            >&nbsp;&nbsp;
+            <span class="bi bi-envelope-at">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="sagarjangde86@gmail.com"
+                >&nbsp;G-mail</a
+              > </span
+            >&nbsp;&nbsp;
+            <span class="bi bi-whatsapp">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="https://web.whatsapp.com/+91 6263171801"
+                >&nbsp;Whatsapp</a
+              > </span
+            >&nbsp;&nbsp;
+            <span class="bi bi-telegram">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="https://t.me/+916263171801"
+                >&nbsp;Telegram</a
+              > </span
+            >&nbsp;&nbsp;
+            <span class="bi bi-linkedin">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="https://www.linkedin.com/in/sukhsagar-jangde-4b0186178/"
+                >&nbsp;Linkedin</a
+              ></span
+            >
+            &nbsp;&nbsp;
+            <span
+              class="bi bi-github text-warning-emphasis"
+              style="margin-left: 6px"
+            >
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="https://github.com/SUKHSAGAR86"
+                >&nbsp;GitHub</a
+              >
+            </span>
+          </marquee>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

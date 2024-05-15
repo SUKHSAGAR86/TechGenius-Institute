@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGenius Institute</title>
+    <link rel="shortcut icon" href="./public/images/banner1.jpeg">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./contact.css">
+
+</head>
+
+<body class="container-fluid">
+   <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"
+          ><img
+            src="/public/images/banner-removebg-preview.png"
+            style="height: 45px; width: 100px;"
+        /></a>
+        <button
+          class="navbar-toggler bg-info-subtle"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navebarcontainer"
+          aria-controls="navebarcontainer"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navebarcontainer">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-4">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./index.html"
+              >
+                <span class="bi bi-house"> Home </span></a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="./course.html"
+                ><span class="bi bi-journal-code"> Cources</span></a
+              >
+            </li>
+
+            <li class="nav-item me-2">
+              <a class="nav-link" href="./service.html"
+                ><span class="bi bi-wrench-adjustable-circle"> Service</span></a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="./about.html"
+                ><span class="bi bi-person-vcard"> About</span></a
+              >
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="./contact.html"
+                ><span class="bi bi-phone-vibrate"> Contact us </span></a
+              >
+            </li>
+          </ul>
+          <div class="nav-item me-3">
+            <nav
+              class="dropdown-toggle"
+              type="text"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="bi bi-box-arrow-in-right" style="cursor: pointer">
+                Sign in</span
+              >
+            </nav>
+            <ul class="dropdown-menu">
+              <li class="nav-link mt-1">
+                <span
+                  class="bi bi-box-arrow-in-right"
+                  data-bs-target="#Singin"
+                  data-bs-toggle="modal"
+                >
+                  Sing in</span
+                >
+              </li>
+              <li class="nav-link mt-1">
+                <span
+                  class="bi bi-person-add"
+                  data-bs-target="#Singup"
+                  data-bs-toggle="modal"
+                >
+                  Sing up</span
+                >
+              </li>
+              <li class="nav-link mt-1">
+                <span
+                  class="bi bi-person-lock"
+                  data-bs-target="#ChangePassword"
+                  data-bs-toggle="modal"
+                >
+                  Change Password
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav><!--nav bar close-->
+    <div class="modal fade" id="Singin">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sing In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mt-1 p-3 d-flex row">
+                    <div class="col-6">
+                        <img src="./public/images/img3-removebg-preview.png" class="h-100 w-100">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" placeholder="Enter Email" class="form-control mb-3 p-2">
+                        <input type="password" placeholder="Enter Password" class="form-control p-2">
+                        <a href="#" class="mt-5">Forgate Password</a>
+                        <button class="btn btn-primary fw-bold mt-2  w-100">Sing in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Singup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Registration</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex row">
+                    <div class="col-5">
+                        <img src="./public/images/login.jpg" class="w-100 h-100">
+                    </div>
+                    <div class="col-7">
+                        <input type="text" placeholder="Enter Name" class="form-control mb-3 p-2">
+                        <input type="text" placeholder="Enter Email" class="form-control mb-3 p-2">
+                        <input type="password" placeholder="Enter Password" class="form-control mb-3 p-2">
+                        <input type="password" placeholder="Confirm Password" class="form-control p-2 mb-5">
+                        <input type="checkbox" class="form-check-input"><span class="text-light-emphasis">I accept
+                            TechGenius Institute <a href="#" style="text-decoration:none" class="text-primary">Terms of Use</a> and
+                            Privacy Notice.</span>
+                        <button class="btn btn-primary fw-bold mt-3 w-100 ">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ChangePassword">
+        <div class="modal-dialog">
+            <div class="modal-content pb-3">
+                <div class="modal-header">
+                    <h5 class="modal-title">Change Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mt-1 p-3 d-flex row">
+                    <div class="col-6">
+                        <img src="./public/images/Change pass.jpg" class="h-100 w-100">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" placeholder="Enter Email" class="form-control mb-3 p-2">
+                        <input type="password" placeholder="Enter Old Password" class="form-control p-2 mb-3">
+                        <input type="password" placeholder="Enter New Password" class="form-control p-2 mb-3">
+                        <input type="password" placeholder="Confirm New Password" class="form-control p-2 mb-3">
+                        <button class="btn btn-primary fw-bold mt-2  w-100">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class=" mt-2 p-5 d-flex justify-content-center align-content-center">
+        <div style="font-size: 350%;" class="fw-bold text-white pt-5 mt-5 ">
+            <div class="mt-5 pt-5 fs-1" style="text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.5);">Contact Us</div>
+        </div>
+
+    </main>
+    <div class=" text-light mt-5">
+        <div class="d-flex justify-content-center">
+            <u>
+                <h4 class="fw-bold">We Always Available for Help You</h4>
+            </u>
+        </div>
+        <div class=" container-fluid text-light d-flex justify-content-center row">
+            <div class="col-sm-6 col-md-5">
+                <dl class="mt-5">
+                    <dd class=""><label class="fw-bold">Phone:</label> 1234 5678 / 1098 7654</dd>
+                    <dd class=""> <label class="fw-bold">Email : </label><a href="support@TechGeniusInstitute.com"
+                            class="text-decoration-none text-light"> support@TechGeniusInstitute.com</a></dd>
+                    <dd><label class="fw-bold">Coll / Whatsapp : </label> <a
+                            href="https://web.whatsapp.com/+91 6263171801" class="text-decoration-none text-light">+91
+                            6263171801</a></dd>
+                    <dd><label class="fw-bold"> International:</label> +1 234 567 89010, +1 123 456 7890</dd>
+                </dl>
+
+            </div>
+            <div class="col-sm-6 col-md-7">
+                <dl class="mt-5">
+                    <dd class=""><label class="fw-bold">Head Office:</label> 2nd Floor, Durga Bhavani Plaza, Raipur,
+                        Chhattisgarh, 492010.</dd>
+                    <dd class=""> <label class="fw-bold">Ameerpet Branch:</label>Ground Floor, Manjeera square,opp Prime
+                        Hospital, Ameerpet, Hyd.</a></dd>
+                    <dd><label class="fw-bold">KPHB Branch:</label> 2nd Floor, Sreeramoju Complex, K P H B Phase 1,
+                        Hyderabad, 500072.</dd>
+                    <dd><label class="fw-bold">USA :</label> 5007 Arbor View Pkwy NW Acworth, GA, 30101</dd>
+                </dl>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid d-flex mt-4">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.621318022151!2d81.59487027526262!3d21.24685988045758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28de0d042b2863%3A0x7cb4fdeca99ca23f!2sPt.%20Ravishankar%20Shukla%20University!5e0!3m2!1sen!2sin!4v1715799896138!5m2!1sen!2sin"
+            height="350" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            class="w-100"></iframe>
+
+
+    </div>
+    <div class="container-fluid abcd mt-4 w-50" id="ContactUsContainer">
+        <h2 class="d-flex justify-content-center text-light fw-bold">Contact Us</h2>
+        <ul id="ContactUs">
+            <li class="list-unstyled"><input id="in1" type="text" placeholder="Enter Yor Name"
+                    class="form-control p-2  rounded-3"> </li>
+            <li class="list-unstyled"><input type="text" placeholder="Enter Yor Email"
+                    class="form-control p-2 mt-3 rounded-3"> </li>
+            <li class="list-unstyled"><input type="text" placeholder="Enter Yor Mobile Number"
+                    class="form-control p-2 mt-3 rounded-3"> </li>
+            <li class="list-unstyled"><input type="text" placeholder="Enter Yor Company/ College Name"
+                    class="form-control p-2 mt-3 rounded-3"> </li>
+            <li class="list-unstyled mt-3"><textarea class="form-control rounded-3" id="exampleFormControlTextarea1"
+                    placeholder=" Describe Massege Here" rows="7"></textarea> </li>
+        </ul>
+        <div class="d-flex justify-content-center" ><button class="btn btn-primary" id="btnSubmit"type="submit"
+                data-bs-target="#submitSuccess" data-bs-toggle="modal" >Submit</button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="submitSuccess">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="fw-bold text-dark me-4">Submit Successfull</h3>
+                    <button typr="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center mt-2">
+
+                    <span class="bi bi-check-circle-fill fs-1 fw-bold text-success"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+     <div class="container-fluid">
+      <!--Footer-->
+      <footer
+        class="mt-4 pt-4 w-auto row"
+        style="background-color: rgb(0, 7, 35)"
+      >
+        <div
+          class="mb-2"
+          style="
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          "
+        >
+          <img
+            src="/public/images/footer.png"
+            class="shadow-lg mb-1"
+            style="height: 100px; width: 200px"
+          />
+        </div>
+        <div class="col-12 col-md-3">
+          <h6 class="border-bottom border-danger pb-2 text-warning">
+            ABOUT TechGenius Institute
+          </h6>
+          <p class="mt-4 text-warning-emphasis">
+            Training Institute Overview TechGenius Institute is a leading
+            software training institute providing Software Training, Project
+            Guidance, IT Consulting and Technology Workshops. Using our enhanced
+            global software training delivery methodology,
+          </p>
+        </div>
+
+        <div class="col-md-3 col-12">
+          <h6 class="border-bottom border-danger pb-2 text-warning">
+            INTERVIEW QUESTIONS
+          </h6>
+          <ul class="mt-4 text-warning-emphasis">
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >DevOps Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >AngularJS Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >Java Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >HTML Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >JavaScript Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >Advanced Java Interview Questions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-warning-emphasis"
+                style="text-decoration: none; cursor: pointer"
+                href="#"
+                >HTML5 and CSS Interview Questions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-12">
+          <h6 class="border-bottom border-danger pb-2 text-warning">
+            RAIPUR MAIN CAMPUS
+          </h6>
+          <ul class="list-unstyled text-warning-emphasis mt-4">
+            <li>Add: 2nd Floor, Durga Bhavani Plaza, Raipur,Chhattisgarh</li>
+            <li>Ph :1234 5678 / 1098 7654</li>
+            <li>Email : support@TechGenius.com</li>
+          </ul>
+          <h6 class="border-bottom border-danger pb-2 mt-5 text-warning">
+            For Online Training:
+          </h6>
+          <ul class="list-unstyled mt-4 text-warning-emphasis">
+            <li>Call/Whatsapp: +91-6263171801</li>
+            <li>Email: techgeniustraining@gamil.com</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-12">
+          <d1v>
+            <h6 class="border-bottom pb-2 border-danger text-warning">
+              FOLLOW US ON SOCIAL MEDIA
+            </h6>
+            <div
+              class="d-flex justify-content-around text-center mt-4 text-warning-emphasis"
+            >
+              <span class="bi bi-facebook" id="footerIcon"></span>
+              <span class="bi bi-instagram" id="footerIcon"></span>
+              <span class="bi bi-linkedin" id="footerIcon"></span>
+              <span class="bi bi-twitter" id="footerIcon"></span>
+              <span class="bi bi-youtube" id="footerIcon"></span>
+            </div>
+          </d1v>
+          <d1v>
+            <h6 class="border-bottom border-danger pb-2 mt-5 text-warning">
+              JOIN OUR TELEGRAM-GET UPDATES
+            </h6>
+            <ul class="mt-4 text-warning-emphasis">
+              <li>
+                <a
+                  class="text-warning-emphasis"
+                  style="text-decoration: none; cursor: pointer"
+                  href="#"
+                  >TechGenius Institute Official Channel</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-warning-emphasis"
+                  style="text-decoration: none; cursor: pointer"
+                  href="#"
+                  >Python | JAVA | AWS | DevOps | Data Science</a
+                >
+              </li>
+            </ul>
+          </d1v>
+        </div>
+        <div class="mt-5 pb-2 text-warning-emphasis">
+          <marquee
+            behavior="scroll"
+            direction="left"
+            scrollamount="10"
+            loop="40"
+          >
+            <span class="text-decoration-none text-warning-emphasis fw-bold"
+              >Developed by:-&nbsp;&nbsp;Sukhsagar Jangde</span
+            >&nbsp;&nbsp;
+            <span class="bi bi-telephone">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="tel:(+91)6263171801 ms-3"
+                >&nbsp;+91 6263171801</a
+              > </span
+            >&nbsp;&nbsp;
+            <span class="bi bi-envelope-at">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="sagarjangde86@gmail.com"
+                >&nbsp;G-mail</a
+              > </span
+            >&nbsp;&nbsp;
+            <span class="bi bi-whatsapp">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="https://web.whatsapp.com/+91 6263171801"
+                >&nbsp;Whatsapp</a
+              > </span
+            >&nbsp;&nbsp;
+            <span class="bi bi-telegram">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="https://t.me/+916263171801"
+                >&nbsp;Telegram</a
+              > </span
+            >&nbsp;&nbsp;
+            <span class="bi bi-linkedin">
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="https://www.linkedin.com/in/sukhsagar-jangde-4b0186178/"
+                >&nbsp;Linkedin</a
+              ></span
+            >
+            &nbsp;&nbsp;
+            <span
+              class="bi bi-github text-warning-emphasis"
+              style="margin-left: 6px"
+            >
+              <a
+                class="text-decoration-none text-warning-emphasis fw-bold"
+                href="https://github.com/SUKHSAGAR86"
+                >&nbsp;GitHub</a
+              >
+            </span>
+          </marquee>
+        </div>
+      </footer>
+    </div>
+</body>
+
+</html>
