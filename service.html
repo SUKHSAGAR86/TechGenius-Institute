@@ -14,7 +14,7 @@
       href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <link rel="stylesheet" href="./service.css"/>
+    <link rel="stylesheet" href="./src/service.css"/>
   </head>
   <body class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
@@ -247,7 +247,7 @@
     </div>
 
     <main class="p-4">
-      <div class="mt-1 pt-4 fw-bold">
+      <div class="mt-1 pt-4 fw-bold" id="servicetitle">
         <div
           class="d-flex justify-content-center mt-5 pt-5"
           style="color: white"
@@ -265,10 +265,10 @@
       </div>
     </main>
 
-    <div class="text-white mt-3">
+    <div class="text-white mt-4 container-fluid">
       <div class="d-flex justify-content-between row">
         <h3 class="text-bg-dark p-1 d-flex justify-content-center">Training</h3>
-        <div class="col-12 col-md-6 mt-1">
+        <div class="container-fluid col-12 col-md-6 mt-1">
           <h4 class="d-flex justify-content-center">Clasroom Training</h4>
           <img
             src="./public/images/classroom Training.jpg"
@@ -299,7 +299,7 @@
             </p>
           </div>
         </div>
-        <div class="col-12 col-md-6 mt-1">
+        <div class="col-12 col-md-6 mt-1 container-fluid">
           <h4 class="d-flex justify-content-center">Online Training</h4>
           <img
             src="./public/images/onlineTraining.jpg"
@@ -345,7 +345,7 @@
           />
         </div>
         <div class="col-12 col-md-7">
-          <dl>
+          <dl id="Corporatext">
             <dt class="fs-4">
               Elevate Your Team with TechGenius Institute Corporate Training
               Programs

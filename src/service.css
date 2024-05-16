@@ -27,32 +27,44 @@ nav {
 }
 
 main {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.9)), url("../public/images/about-as-service-contact-information-concept.jpg");
-    background-size: 100% 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../public/images/service.jpg);
+    background-size: 100% 600px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-
 }
 
-.card {
-    margin-bottom: 15px;
-}
-
-.card:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s ease;
-    box-shadow: 0 4px 6px #fffefe;
+#CorporateTraining {
+    margin-top: -50px !important;
 }
 
 @media only screen and (max-width:480px) {
     .dropdown-menu {
         position: absolute;
-        padding: 10px;
         margin-left: 30%;
+        padding: 10px;
         font-size: 16px;
     }
 
     .modal {
         margin-top: 30%;
     }
+
+    main {
+        background-size: 100% 300px !important;
+
+    }
+
+    #servicetitle {
+        margin-top: -6.75rem !important;
+        font-size: 60%;
+    }
+
+    #CorporateTraining {
+        margin-top: 25px !important;
+    }
+
+    #Corporatext {
+        margin-top: -15px !important;
+        margin-bottom: 40px !important;
+    } 
 }

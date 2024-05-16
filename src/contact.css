@@ -79,4 +79,12 @@ main {
     .modal {
         margin-top: 30%;
     }
+
+    main {
+        background-size: 100% 300px !important;
+    }
+
+    .ContactTitle {
+        margin-top: -80px !important;
+    }
 }

@@ -41,6 +41,9 @@ body {
         .modal{
             margin-top: 30%;
         }
+    .carousel-item >img{
+        height: 250px !important;
+    }
 
   }
     
